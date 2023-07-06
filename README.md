@@ -25,6 +25,16 @@
 
 This application is a text editor that runs in the browser. It uses data persistance technology and index db that allows it to store data in the users storage so that it can operate offline.
 
+![Jate open in browser](./images/browser.png)
+
+![After clicking install button](./images/install.png)
+
+![Open in App after install](./images/App.png)
+
+![Service Worker](./images/service-worker.png)
+
+![Index DB](./images/index-db.png)
+
 ## Usage
 
 ---
