@@ -4,8 +4,8 @@ const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
 
-// TODO: Add and configure workbox plugins for a service worker and manifest file.
-// TODO: Add CSS loaders and babel to webpack.
+// workbox plugins for a service worker and manifest file.
+
 
 module.exports = () => {
   return {
@@ -30,7 +30,7 @@ module.exports = () => {
         swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
-        // TODO: Create a manifest.json: done! needs work
+       
         filename: 'manifest.json',
         fingerprints: false,
         inject: true,
@@ -46,9 +46,10 @@ module.exports = () => {
             sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
             destination: path.join('assets', 'icons'),
           },
+          // favicon icon
           {
             src: path.resolve('favicon.ico'),
-            sizes: [48], // multiple sizes
+            sizes: [48], 
             destination: path.join('assets', 'icons'),
           },
 
@@ -57,7 +58,7 @@ module.exports = () => {
       }),
      
     ],
-
+//  CSS loaders and babel
     module: {
       rules: [
         {
